@@ -7,8 +7,6 @@ app.get('/receive', function (req, res) {
     res.send("hello world");
 });
 
-var sockets = []
-
 // clients
 io.on('connection', function (socket) {
     socket.on('url change', function (url) {
