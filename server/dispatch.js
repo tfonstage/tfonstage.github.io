@@ -13,7 +13,6 @@ io.on('connection', function (socket) {
         console.log('url change')
         io.emit('url change', url);
     })
-    // todo - dispatch current URL
     console.log('a user connected');
 });
 
