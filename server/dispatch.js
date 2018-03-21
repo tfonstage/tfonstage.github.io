@@ -11,6 +11,7 @@ var lastUrl = null;
 
 // clients
 io.on('connection', function (socket) {
+    console.log(lastUrl)
     if (lastUrl) {
         socket.emit('url change', lastUrl);
     }
@@ -20,6 +21,12 @@ io.on('connection', function (socket) {
         console.log('url change')
         io.emit('url change', url);
     })
+
+    socket.on('clear last URL', function () {
+        console.log('clear last url')
+        lastUrl = null;
+    })
+
     console.log('a user connected');
 });
 

@@ -22,15 +22,20 @@
                 var url = $(event.currentTarget).attr("url")
                 socket.emit("url change", url)
             })
+
+            $('#clear').click(function () {
+                socket.emit("clear last URL")
+            })
         })
     </script>
     <button class="open-form" url="https://sennett.typeform.com/to/j58D0N">poll and selfie typeform</button><br />
-    
+
     <br />
     <input type="text" id="url" placeholder="typeform url here" />
     <button id="submit">
         submit
     </button>
+    <button id="clear">clear last URL</button>
 </body>
 
 </html>
