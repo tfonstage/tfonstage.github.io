@@ -7,9 +7,16 @@ app.get('/receive', function (req, res) {
     res.send("hello world");
 });
 
+var lastUrl = null;
+
 // clients
 io.on('connection', function (socket) {
+    if (lastUrl) {
+        socket.emit('url change', lastUrl);
+    }
+
     socket.on('url change', function (url) {
+        lastUrl = url;
         console.log('url change')
         io.emit('url change', url);
     })
