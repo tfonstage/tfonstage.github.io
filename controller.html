@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/lib/socket.io.client.js"></script>
+    <script src="/socketConfig.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        var socket = io(SOCKET_URL);
+
+        $(function () {
+            $("#submit").click(function () {
+                console.log('url changer triiggere')
+                socket.emit("url change", $("#url").val())
+            })
+        })
+    </script>
+    <br /> https://freetemplate.typeform.com/to/GiClwL
+    <br />https://freetemplate.typeform.com/to/PlBzgL
+    <br />
+    <input type="text" id="url" />
+    <button id="submit">
+        submit
+    </button>
+</body>
+
+</html>

@@ -8,6 +8,10 @@
     <meta name="HandheldFriendly" content="true">
     <title>Coming soon to a device near you.....</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
+    <script src="/lib/socket.io.client.js"></script>
+    <script src="/socketConfig.js"></script>
     <style>
         html,
         body {
@@ -17,6 +21,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+        }
+
+        iframe {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            border: 0;
         }
 
         .content {
@@ -27,18 +41,36 @@
 </head>
 
 <body>
-    <div class="content">
+    <div class="content" id="form-target">
         <div class="content__wait">Wait for it...</div>
         <div class="content__countdown" id="countdown-timer"></div>
+        <button id="openForm">open form</button>
     </div>
     <script>
         var endTime = moment('2018-03-22 20:00:00')
         var countdownTarget = document.getElementById("countdown-timer")
+
         setInterval(function updateTimeout() {
             var now = moment()
             var duration = moment.duration(endTime.diff(now))
             countdownTarget.innerHTML = `${duration.hours()}:${duration.minutes()}:${duration.seconds()}`
         }, 1000)
+
+        document.getElementById('openForm').addEventListener('click', function () {
+            showTypeform("https://sennett.typeform.com/to/j58D0N")
+        })
+
+        var socket = io(SOCKET_URL);
+
+        socket.on('url change', function (url) {
+            showTypeform(url)
+        });
+
+        function showTypeform(formUrl) {
+            $("#typeform-full").remove()
+            $("body").prepend(`<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="${formUrl}"></iframe>`)
+        }
+
     </script>
 </body>
 
