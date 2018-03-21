@@ -17,12 +17,17 @@
                 console.log('url changer triiggere')
                 socket.emit("url change", $("#url").val())
             })
+
+            $('.open-form').click(function (event) {
+                var url = $(event.currentTarget).attr("url")
+                socket.emit("url change", url)
+            })
         })
     </script>
-    <br /> https://freetemplate.typeform.com/to/GiClwL
-    <br />https://freetemplate.typeform.com/to/PlBzgL
+    <button class="open-form" url="https://sennett.typeform.com/to/j58D0N">poll and selfie typeform</button><br />
+    
     <br />
-    <input type="text" id="url" />
+    <input type="text" id="url" placeholder="typeform url here" />
     <button id="submit">
         submit
     </button>

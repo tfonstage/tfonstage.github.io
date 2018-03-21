@@ -44,7 +44,6 @@
     <div class="content" id="form-target">
         <div class="content__wait">Wait for it...</div>
         <div class="content__countdown" id="countdown-timer"></div>
-        <button id="openForm">open form</button>
     </div>
     <script>
         var endTime = moment('2018-03-22 20:00:00')
@@ -55,10 +54,6 @@
             var duration = moment.duration(endTime.diff(now))
             countdownTarget.innerHTML = `${duration.hours()}:${duration.minutes()}:${duration.seconds()}`
         }, 1000)
-
-        document.getElementById('openForm').addEventListener('click', function () {
-            showTypeform("https://sennett.typeform.com/to/j58D0N")
-        })
 
         var socket = io(SOCKET_URL);
 
