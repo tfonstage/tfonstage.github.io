@@ -1,0 +1,491 @@
+/* SCREENS > 900px */
+
+::-moz-selection { background: yellow; }
+::selection { background: rgba(113, 97, 239); color: white;}
+
+a {
+    color: #2e2e2e;
+}
+
+.finalcta {
+    padding-left: 56px;
+    width: 70%;
+    background-color: #2e2e2e;
+    padding-top: 80x;
+    padding-bottom: 80px;
+}
+
+.finalcta h1 {
+    color: white;
+    font-size: 65px;
+    width: 500px;
+    font-weight: 900;
+    line-height: 82px;
+    padding-top: 80px;
+}
+
+    #logosvgmobile{
+    display: none;
+}
+   
+
+#integrations_desc {
+    width: 400px;
+}
+
+#step {
+    display: block;
+    padding-top: 45px;
+    margin-right: 56px;
+}
+
+.logos {
+    padding-left: 56px;
+    width: 70%;
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#logosvg{
+    vertical-align: middle;
+    padding-top: 25px;
+    width: 27%;
+    display: inline-block;
+}
+
+#logos_title {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+h1 {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-size: 48px;
+    color: #2E2E2E;
+    letter-spacing: 0;
+    line-height: 58px;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-size: 38px;
+    color: #2E2E2E;
+    letter-spacing: 0;
+    line-height: 58px;
+    font-weight: 200;
+}
+
+h3 {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-size: 22px;
+    color: #2E2E2E;
+    letter-spacing: 0;
+    line-height: 33px;
+    font-weight: 100;
+}
+
+h4 {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    color: #2E2E2E;
+    letter-spacing: 0;
+    line-height: 26px;
+    font-weight: 200;
+}
+
+.wistiavideo {
+    padding-top: 35px;
+    border: 1px solid #f9f9f9;
+    width: 80%;
+}
+
+li a {
+    text-decoration: none;
+    color: #2E2E2E;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding-right: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: #2E2E2E;
+    transition: color 0.3s ease;
+}
+
+#title {
+    margin-top: 120px;
+    margin-left: 56px;
+    width: 575px;
+}
+
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+#header {
+    display: inline;
+}
+
+#logo {
+    margin-top: 20px;
+    padding-left: 56px;
+    float: left;
+    transition: transform 0.3s ease;
+
+}
+
+#menu {
+    padding-right: 56px;
+    float: right;
+    text-align: right;
+}
+
+#menu li {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding-right: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: #2E2E2E;
+    transition: color 0.3s ease;
+
+}
+
+#menu li a:hover {
+    color: darkgray;
+}
+
+#left {
+    overflow: hidden;
+    width: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.05);
+}
+
+#right {
+    background-color: 2e2e2e;
+    width: 30%;
+    display: inline-block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-image: -webkit-image-set( url(../images/background.jpg) 1x, url(../images/background@2x.jpg) 2x);
+    background-size: cover;
+}
+
+#menu li.btn a {
+    color: #ffffff;
+    background-color: #2E2E2E;
+    padding: 12px 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+#menu li.btn:hover a {
+    text-decoration: none;
+    background-color: #7161EF;
+    opacity: 1;
+
+}
+
+#typeform-share button:hover a {
+    text-decoration: none;
+    background-color: #7161EF;
+    opacity: 1;
+
+}
+
+#logo:hover {
+    /*transform: scale(1.025);*/
+}
+
+.cta {
+    display: inline-block;
+    margin-left: 56px;
+    margin-top: 32px;
+}
+
+#cta_btn {
+    display: inline-block;
+}
+
+#tellmemore {
+    display: inline-block;
+}
+
+#earlyaccessbtn {
+    color: #ffffff;
+    background-color: #7161EF;
+    padding: 12px 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-right: 24px;
+}
+
+#earlyaccessbtn:hover {
+    text-decoration: none;
+    background-color: #2E2E2E;
+    opacity: 1;
+}
+
+#tellmemore a {
+    text-decoration: none;
+    color: 2e2e2e;
+    padding-bottom: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #7161EF;
+}
+
+.benefits {
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 80px 300px 80px 56px;
+    margin-top: 120px;
+}
+
+.benefits_column {
+    vertical-align: top;
+    padding-right: 50px;
+    margin-top: 50px;
+    width: 23%;
+    display: inline-block;
+}
+
+#benefits_title {
+    width: 565px;
+}
+
+#howitworks_title 
+    width: 565px;
+}
+
+#social_title {
+    width: 765px;   
+}
+
+#howitworks {
+    background-image: -webkit-image-set( url(../images/backpurple.jpg) 1x, url(../images/backpurple@2x.jpg) 2x);
+    padding-top: 80px;
+    background-size: cover;
+    padding-left: 56px;
+    width: 70%;
+    padding-bottom: 100px;
+}
+
+#socialproof {
+    width: 70%;
+    background-color: #fff;
+    padding-left: 56px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sociallogo {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    width: 23%;
+    margin-right: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#testimonial {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Roboto, Arial, sans-serif;
+    padding-right: 35px;
+    font-weight: 200;
+}
+
+#imageprofile {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#name {
+    padding-top: 10px;
+    color: #7161EF;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 00;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* SCREENS < 990px */
+
+@media screen and (max-width: 1000px) {
+    
+    .finalcta {
+    width: 100%;    
+    }
+
+    #logosvg{
+    display: none;
+}
+    #logosvgmobile {
+    padding-top: 45px;
+    display: block;    
+    }
+    
+    
+    #right {
+        display: none;
+    }
+    
+    #left {
+    width: 100%;
+}
+    
+    #benefits_title {
+    width: 100%;
+}
+    
+    .benefits_column {
+    display: block;
+    width: 100%;    
+    }
+    
+    .benefits {
+    width: 80%;
+    margin-right: 35px;
+    margin-top: 50px;
+}
+    
+    #socialproof {
+    padding-left: 24px;
+    margin-right: 24px;
+    width: 100%;
+}
+    #social_title {
+    width: 90%;
+}
+    
+    .sociallogo {
+    display: block;
+    }
+    
+    .wistiavideo {
+    width: 100%;
+    }
+    
+    .sociallogo {
+    width: 90%;    
+    }
+    
+    #howitworks {
+    width: 100%;    
+    }
+
+
+    
+/* SCREENS < 650 */
+
+@media screen and (max-width: 650px) {
+    
+       
+    #howitworks {
+    padding-left: 24px;    
+    }
+
+    #right {
+        display: none;
+    }
+    
+    #menu #li1 {
+    display: none;
+    }
+    
+    #menu #li2 {
+    display: none;
+    }
+    
+    #menu #li3 {
+    display: none;
+    }
+    
+    #logo {
+    margin-bottom: 16px;
+    padding-left: 24px;
+    }
+    
+    #title {
+    width: 80%;
+    margin-right: 35px;
+    margin-top: 50px;
+    padding-left: 24px;
+    }
+    
+    .benefits {
+    width: 80%;
+    margin-top: 50px;
+    padding: 24px 120px 80px 24px;
+    }
+    
+    
+    .sociallogo {
+    display: block;
+    width: 90%;    
+    }
+        
+    .cta {
+    display: inline-block;
+    margin-left: 24px;
+    }
+    
+    
+    #title {
+    margin-left: 24px;
+    }
+    
+    #integrations_desc {
+    width: 100%;
+    margin-right: 0;
+    }
+    
+    .finalcta h1 {
+    width: 290px;    
+    }
+    
+    #menu {
+    padding-right: 24px;
+    }
+
+}
+    
+
+
+
