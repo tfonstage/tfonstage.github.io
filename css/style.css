@@ -24,7 +24,7 @@ a {
     padding-top: 80px;
 }
 
-    #logosvgmobile{
+    #logosvgmobile, #logosvgtablet{
     display: none;
 }
    
@@ -146,7 +146,7 @@ body {
 }
 
 #logo {
-    margin-top: 20px;
+    margin-top: 14px;
     padding-left: 56px;
     float: left;
     transition: transform 0.3s ease;
@@ -195,7 +195,7 @@ body {
     height: 100vh;
     position: fixed;
     top: 0;
-    background-image: -webkit-image-set( url(../images/background.jpg) 1x, url(../images/background@2x.jpg) 2x);
+    background-image: url(../images/background@2x.jpg);
     background-size: cover;
 }
 
@@ -286,7 +286,7 @@ body {
 }
 
 #benefits_title {
-    width: 565px;
+    width: 655px;
 }
 
 #howitworks_title 
@@ -298,7 +298,7 @@ body {
 }
 
 #howitworks {
-    background-image: -webkit-image-set( url(../images/backpurple.jpg) 1x, url(../images/backpurple@2x.jpg) 2x);
+    background-image: url(../images/backpurple@2x.jpg);
     padding-top: 80px;
     background-size: cover;
     padding-left: 56px;
@@ -310,13 +310,12 @@ body {
     width: 70%;
     background-color: #fff;
     padding-left: 56px;
-    padding-top: 80px;
+    padding-top: 32px;
     padding-bottom: 80px;
 }
 
 .sociallogo {
     padding-top: 35px;
-    padding-bottom: 30px;
     width: 23%;
     margin-right: 25px;
     display: inline-block;
@@ -356,10 +355,6 @@ body {
     #logosvg{
     display: none;
 }
-    #logosvgmobile {
-    padding-top: 45px;
-    display: block;    
-    }
     
     
     #right {
@@ -406,6 +401,11 @@ body {
     width: 90%;    
     }
     
+        #logosvgtablet {
+    padding-top: 45px;
+    display: block;    
+    }
+    
     #howitworks {
     width: 100%;    
     }
@@ -415,6 +415,15 @@ body {
 /* SCREENS < 650 */
 
 @media screen and (max-width: 650px) {
+    
+    #logosvgmobile {
+    padding-top: 45px;
+    display: block;    
+    }
+    
+    #logosvgtablet {
+        display: none;
+    }
     
        
     #howitworks {
@@ -446,7 +455,7 @@ body {
     width: 80%;
     margin-right: 35px;
     margin-top: 50px;
-    padding-left: 24px;
+    margin-left: 24px;
     }
     
     .benefits {
@@ -478,6 +487,14 @@ body {
     
     .finalcta h1 {
     width: 290px;    
+    }
+    
+    .logos {
+    padding-left: 24px;
+    }
+    
+    .finalcta {
+    padding-left: 24px;
     }
     
     #menu {
