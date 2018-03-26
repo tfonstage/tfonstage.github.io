@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <div class="content" id="form-target">
+    <!-- <div class="content" id="form-target">
         <div>This will update at the relevant point.</div>
         <div>Listen for Nadav.</div>
         <div>If it didn't work try refreshing.</div>
@@ -49,22 +49,22 @@
         <br />
         <div>Token countdown timer</div>
         <div class="content__countdown" id="countdown-timer"></div>
-    </div>
+    </div> -->
     <script>
-        var endTime = moment('2018-03-22 21:30:00')
-        var countdownTarget = document.getElementById("countdown-timer")
+        // var endTime = moment('2018-03-22 21:30:00')
+        // var countdownTarget = document.getElementById("countdown-timer")
 
-        setInterval(function updateTimeout() {
-            var now = moment()
-            var duration = moment.duration(endTime.diff(now))
-            countdownTarget.innerHTML = `${duration.hours()}:${duration.minutes()}:${duration.seconds()}`
-        }, 1000)
+        // setInterval(function updateTimeout() {
+        //     var now = moment()
+        //     var duration = moment.duration(endTime.diff(now))
+        //     countdownTarget.innerHTML = `${duration.hours()}:${duration.minutes()}:${duration.seconds()}`
+        // }, 1000)
 
-        var socket = io(SOCKET_URL);
+        // var socket = io(SOCKET_URL);
 
-        socket.on('url change', function (url) {
-            showTypeform(url)
-        });
+        // socket.on('url change', function (url) {
+        //     showTypeform(url)
+        // });
 
         function showTypeform(formUrl) {
             $("#typeform-full").remove()
